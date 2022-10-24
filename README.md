@@ -23,6 +23,12 @@ python data_preprocessing_main.py
 ```
 
 ## Training and Evaluation
+**Prepare directory**:
+```
+mkdir pred
+mkdir runs
+```
+
 **Training**:
 ```
 bash train_baseline.sh
