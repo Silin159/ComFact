@@ -152,7 +152,7 @@ python main.py --test --model cem --dataset ${dataset} --save_path ${save} --mod
 
 **NLG Evaluation**:
 
-Move the obtained results.txt from ${save} (your result saving directory) to results/ directory, rename the file to ${name}.txt, then run:
+Move the obtained results.txt from your result saving directory to results/ directory, rename the file to ${name}.txt, then run:
 ```
 python src/scripts/evaluate.py --results ${name}
 ```
