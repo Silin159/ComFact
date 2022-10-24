@@ -120,7 +120,7 @@ python preprocess_cem_link.py
 ```
 The extracted data will be placed in data/cem/rel_tail/nlg/test/${split}_data.json, where ${split}: "train" | "val" | "test"
 
-**Knowledge refining** by fact linker and **labeling** the relevance of CEM knowledge in the extracted data:
+**Knowledge refining** by fact linker, *i.e.*, **labeling** the relevance of knowledge in the extracted CEM data:
 ```
 bash run_baseline_cem_link_x.sh
 python label_cem.py
