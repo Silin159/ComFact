@@ -98,6 +98,11 @@ Download **CEM data** from [this link](https://drive.google.com/file/d/1p_70KLQz
 
 We also include our preprocessed CEM data **with ComFact refined knowledge**: ED/dataset_preproc_link.p
 
+**Prepare directory**:
+```
+mkdir CEM/saved
+mkdir CEM/vectors
+```
 Copy glove.6B.zip from data/glove/ to CEM/vectors/ directory.
 
 ### Knowledge Refinement (For producing dataset_preproc_link.p, Optional)
