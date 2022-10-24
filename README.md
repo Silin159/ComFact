@@ -34,11 +34,11 @@ mkdir runs
 bash train_baseline.sh
 ```
 Parameters:
-- language model ${lm}: "deberta-large", "deberta-base", "roberta-large", "roberta-base", "bert-large", "bert-base", "distilbert-base" or "lstm"
-- data portion ${portion}: "persona", "mutual", "roc", "movie" or "all" (training on the union of all four data portions)
-- context window ${window}: "nlg" (half window without future context) or "nlu" (full context window)
-- linking task ${task}: "fact_full" (direct setting), "head" (head entity linking, sub-task in pipeline setting) or "fact_cut" (fact linking of relevant head entities, sub-task in pipeline setting)
-- evaluation set ${eval_set}: "val" (validation set) or "test" (testing set)
+- language model ${lm}: "deberta-large" | "deberta-base" | "roberta-large" | "roberta-base" | "bert-large" | "bert-base" | "distilbert-base" | "lstm"
+- data portion ${portion}: "persona" | "mutual" | "roc" | "movie" | "all" (training on the union of all four data portions)
+- context window ${window}: "nlg" (half window without future context) | "nlu" (full context window)
+- linking task ${task}: "fact_full" (direct setting) | "head" (head entity linking, sub-task in pipeline setting) | "fact_cut" (fact linking of relevant head entities, sub-task in pipeline setting)
+- evaluation set ${eval_set}: "val" (validation set) | "test" (testing set)
 
 
 **Evaluating direct setting or sub-tasks in pipeline setting**:
@@ -52,7 +52,7 @@ parameters refer to Training.
 ```
 python evaluate_linking.py --model ${lm} --window ${window} --portion ${portion} --linking ${task}
 ```
-parameters refer to Training, ${task} should be **fact_full** or **fact_cut**
+parameters refer to Training, ${task} should be **fact_full** | **fact_cut**
 
 
 **Evaluating full pipeline setting**:
@@ -74,8 +74,8 @@ parameters refer to Training.
 bash cross_evaluation.sh
 ```
 Parameters:
-- source data portion providing training set ${source_portion}: "persona", "mutual", "roc", "movie" or "all"
-- target data portion providing validation or testing set ${target_portion}: "persona", "mutual", "roc", "movie" or "all"
+- source data portion providing training set ${source_portion}: "persona" | "mutual" | "roc" | "movie" | "all"
+- target data portion providing validation or testing set ${target_portion}: "persona" | "mutual" | "roc" | "movie" | "all"
 
 others refer to Training.
 
@@ -113,7 +113,7 @@ bash train_baseline_rel_tail_link_x.sh
 python cem_data_extract.py
 python preprocess_cem_link.py
 ```
-The extracted data will be placed in data/cem/rel_tail/nlg/test/${split}_data.json, where ${split}: "train", "val" or "test".
+The extracted data will be placed in data/cem/rel_tail/nlg/test/${split}_data.json, where ${split}: "train" | "val" | "test"
 
 **Knowledge refining** by fact linker and **labeling** the relevance of CEM knowledge in the extracted data:
 ```
@@ -137,7 +137,7 @@ cd CEM
 python main.py --model cem --dataset ${dataset} --save_path ${save} --model_path ${save} --cuda
 ```
 Parameters:
-- data source ${dataset}: **dataset_preproc.p** (original CEM dataset) or **dataset_preproc_link.p** (CEM dataset with ComFact refined knowledge),
+- data source ${dataset}: **dataset_preproc.p** (original CEM dataset) | **dataset_preproc_link.p** (CEM dataset with ComFact refined knowledge),
 - ${save}: your directory for saving the model and results.
 
 **Testing CEM** dialogue model:
