@@ -80,7 +80,7 @@ Parameters:
 others refer to Training.
 
 
-**Plot heatmap** for cross evaluation (${lm}: roberta-large, ${window}: nlg, ${task}: fact_full):
+**Plot heatmap** for cross evaluation (lm: roberta-large, window: nlg, task: fact_full):
 ```
 python plot_cross_evaluation.sh
 ```
