@@ -159,4 +159,4 @@ python src/scripts/evaluate.py --results ${name}
 Parameters:
 - ${name}: name of the results file, *e.g.*, CEM_link
 
-We include the dialogue generation results: **CEM_ori.txt** (original CEM) and **CEM_link.txt** (CEM trained with ComFact refined knowledge) under results/ directory.
+We include the dialogue generation results: **CEM_ori.txt** (from original CEM) and **CEM_link.txt** (from CEM trained with ComFact refined knowledge) under results/ directory.
