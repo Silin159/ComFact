@@ -82,7 +82,7 @@ others refer to Training.
 
 **Plot heatmap** for cross evaluation (lm: roberta-large, window: nlg, task: fact_full):
 ```
-python plot_cross_evaluation.sh
+python plot_cross_evaluation.py
 ```
 
 ## Downstream Dialogue Response Generation (CEM)
