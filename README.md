@@ -1,5 +1,5 @@
 # ComFact
-This is the source code for paper "ComFact: A Benchmark for Linking Contextual Commonsense Knowledge".
+This is the source code for paper [ComFact: A Benchmark for Linking Contextual Commonsense Knowledge](https://arxiv.org/abs/2210.12678).
 
 
 ## Getting Started
