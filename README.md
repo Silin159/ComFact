@@ -7,7 +7,7 @@ Start with creating a **python 3.6** venv and installing **requirements.txt**.
 
 
 ## ComFact Datasets
-Our **ComFact dataset** can be downloaded from [this link](https://drive.google.com/file/d/1nbQiASv32WTGVo5TQHatJbxBlz2HtMRP/view?usp=sharing), please place data/ under this root directory.
+Our **ComFact dataset** can be downloaded from [this link](https://drive.google.com/file/d/1h-9kK2ipoYiELqv6lOT6IarwlByGWuu1/view?usp=sharing), please place data/ under this root directory.
 
 Pretrained Glove embeddings can be downloaded from [this link](https://drive.google.com/file/d/1-JOiwWLqydNdA3mptHNv5ZWKTC2gkcAj/view?usp=sharing), please place glove/ under the data/ directory and unzip glove.6B.zip in it.
 
@@ -92,7 +92,7 @@ pip install git+https://github.com/Maluuba/nlg-eval.git@master
 nlg-eval --setup
 ```
 
-Download **CEM data** from [this link](https://drive.google.com/file/d/1p_70KLQzoqW92YexDyVlhKB4k9Mikv4E/view?usp=sharing) and place data/ under CEM/ directory.
+Download **CEM data** from [this link](https://drive.google.com/file/d/1p274eVpTGldkR1kkMAcNNKWQ4MLq-pqk/view?usp=sharing) and place data/ under CEM/ directory.
 
 **Original** preprocessed CEM data: ED/dataset_preproc.p
 
