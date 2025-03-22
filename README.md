@@ -1,4 +1,19 @@
-# ComFact
+<div align="center">
+
+# ComFact: A Benchmark for Linking Contextual Commonsense Knowledge
+
+</div>
+
+<div align="center">
+<b><a href="https://silin159.github.io/SilinGao/" target="_blank">Silin Gao</a><sup>1</sup>, <a href="https://jenahwang.github.io/" target="_blank">Jena D. Hwang</a><sup>1</sup>, <a href="https://www.sony.com/en/SonyInfo/research/projects/character_conversation_AI/" target="_blank">Saya Kanno</a><sup>2</sup>, <a href="https://www.linkedin.com/in/hiromi-wakaki-570067286/?originalSubdomain=jp" target="_blank">Hiromi Wakaki</a><sup>2</sup>, <a href="https://www.yukimitsufuji.com/" target="_blank">Yuki Mitsufuji</a><sup>2</sup>, <a href="https://atcbosselut.github.io/" target="_blank">Antoine Bosselut</a><sup>1</sup></b>
+
+<sup>1</sup>EPFL &nbsp; <sup>2</sup>Sony
+
+[![ArXiv](https://img.shields.io/badge/arXiv-2210.12678-B31B1B.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2210.12678)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-blue)](https://huggingface.co/datasets/Silin1590/ComFact)
+
+</div>
+
 This is the source code for paper [ComFact: A Benchmark for Linking Contextual Commonsense Knowledge](https://arxiv.org/abs/2210.12678).
 
 
@@ -160,3 +175,14 @@ Parameters:
 - ${name}: name of the results file, *e.g.*, CEM_link
 
 We include the dialogue generation results: **CEM_ori.txt** (from original CEM) and **CEM_link.txt** (from CEM trained with ComFact refined knowledge) under results/ directory.
+
+## Citation
+```bibtex
+@inproceedings{gao2022comfact,
+  title={ComFact: A Benchmark for Linking Contextual Commonsense Knowledge},
+  author={Gao, Silin and Hwang, Jena D and Kanno, Saya and Wakaki, Hiromi and Mitsufuji, Yuki and Bosselut, Antoine},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2022},
+  pages={1656--1675},
+  year={2022}
+}
+```
